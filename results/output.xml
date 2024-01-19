@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-19T09:02:09.777680" rpa="false" schemaversion="5">
+<suite id="s1" name="Tecnica-Test" source="C:\Users\aluga.com\Desktop\tecnica-test">
+<suite id="s1-s1" name="Features" source="C:\Users\aluga.com\Desktop\tecnica-test\features">
+<suite id="s1-s1-s1" name="Vehicle-Insurance-E2E" source="C:\Users\aluga.com\Desktop\tecnica-test\features\vehicle-insurance-e2e.robot">
+<test id="s1-s1-s1-t1" name="Case - Vehicle Insurance Quote e2e" line="9">
+<kw name="Given Enter Vehicle Data" owner="vehicle-data-page">
+<kw name="Acessar a pagina do Test" owner="pages-common">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:10.138642" level="INFO">Opening browser 'chrome' to base url 'http://sampleapp.tricentis.com/101/app.php'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<arg>executable_path=${DRIVER_PATH}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-19T09:02:10.138642" elapsed="4.451906"/>
+</kw>
+<status status="PASS" start="2024-01-19T09:02:10.137639" elapsed="4.452909"/>
+</kw>
+<kw name="Selecionar Opcao No Dropdown" owner="pages-common">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:14.592546" level="INFO">Selecting options from selection list 'id=make' by label Audi.</msg>
+<arg>${locator}</arg>
+<arg>${opcao}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-01-19T09:02:14.591546" elapsed="0.104329"/>
+</kw>
+<arg>${MAKE_DROPDOWN}</arg>
+<arg>Audi</arg>
+<status status="PASS" start="2024-01-19T09:02:14.591546" elapsed="0.104329"/>
+</kw>
+<kw name="Selecionar Opcao No Dropdown" owner="pages-common">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:14.700374" level="INFO">Selecting options from selection list 'id=model' by label Moped.</msg>
+<arg>${locator}</arg>
+<arg>${opcao}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-01-19T09:02:14.699897" elapsed="0.060515"/>
+</kw>
+<arg>${MODEL_DROPDOWN}</arg>
+<arg>Moped</arg>
+<status status="PASS" start="2024-01-19T09:02:14.697304" elapsed="0.063108"/>
+</kw>
+<kw name="Escrever em Campo de Texto" owner="pages-common">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:14.761426" level="INFO">Typing text '20' into text field 'id=cylindercapacity'.</msg>
+<arg>${locator}</arg>
+<arg>${text_to_type}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T09:02:14.761426" elapsed="0.109246"/>
+</kw>
+<arg>${CYLINDER_CAPACITY}</arg>
+<arg>20</arg>
+<status status="PASS" start="2024-01-19T09:02:14.760412" elapsed="0.111290"/>
+</kw>
+<kw name="Escrever em Campo de Texto" owner="pages-common">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:14.873957" level="INFO">Typing text '20' into text field 'id=cylindercapacity'.</msg>
+<arg>${locator}</arg>
+<arg>${text_to_type}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T09:02:14.873457" elapsed="0.088166"/>
+</kw>
+<arg>${CYLINDER_CAPACITY}</arg>
+<arg>20</arg>
+<status status="PASS" start="2024-01-19T09:02:14.871919" elapsed="0.089704"/>
+</kw>
+<kw name="Preencher Campo de Data" owner="pages-common">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:14.962619" level="INFO">Typing text '200' into text field 'id=engineperformance'.</msg>
+<arg>${locator}</arg>
+<arg>${date}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T09:02:14.962619" elapsed="0.083038"/>
+</kw>
+<arg>${ENGINE_PERFORMANCE}</arg>
+<arg>200</arg>
+<status status="PASS" start="2024-01-19T09:02:14.961623" elapsed="0.084352"/>
+</kw>
+<kw name="Selecionar Opcao No Dropdown" owner="pages-common">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:15.048702" level="INFO">Selecting options from selection list 'id=numberofseats' by label 2.</msg>
+<arg>${locator}</arg>
+<arg>${opcao}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-01-19T09:02:15.046991" elapsed="0.080549"/>
+</kw>
+<arg>${NUMBER_OF_SEATS}</arg>
+<arg>2</arg>
+<status status="PASS" start="2024-01-19T09:02:15.045975" elapsed="0.081565"/>
+</kw>
+<kw name="Selecionar Opcao No Dropdown" owner="pages-common">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:15.129212" level="INFO">Selecting options from selection list 'id=numberofseatsmotorcycle' by label 2.</msg>
+<arg>${locator}</arg>
+<arg>${opcao}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-01-19T09:02:15.129212" elapsed="0.077177"/>
+</kw>
+<arg>${NUMBER_OF_SEATS_MOTORCYCLE}</arg>
+<arg>2</arg>
+<status status="PASS" start="2024-01-19T09:02:15.128166" elapsed="0.078725"/>
+</kw>
+<kw name="Preencher Campo de Data" owner="pages-common">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:15.208059" level="INFO">Typing text '01/03/2024' into text field 'id=dateofmanufacture'.</msg>
+<arg>${locator}</arg>
+<arg>${date}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T09:02:15.207581" elapsed="0.148403"/>
+</kw>
+<arg>${DATE_OF_MANUFACTURE}</arg>
+<arg>01/03/2024</arg>
+<status status="PASS" start="2024-01-19T09:02:15.206992" elapsed="0.150012"/>
+</kw>
+<kw name="Clicar em Sim" owner="pages-common">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:15.357988" level="INFO">Executing JavaScript:
+document.getElementById('righthanddriveyes').click()
+Without any arguments.</msg>
+<arg>document.getElementById('${locator}').click()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-01-19T09:02:15.357004" elapsed="0.012335"/>
+</kw>
+<arg>${RIGHT_HAND_DRIVE_YES}</arg>
+<status status="PASS" start="2024-01-19T09:02:15.357004" elapsed="0.012335"/>
+</kw>
+<kw name="Selecionar Opcao No Dropdown" owner="pages-common">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:15.370362" level="INFO">Selecting options from selection list 'id=fuel' by label Diesel.</msg>
+<arg>${locator}</arg>
+<arg>${opcao}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-01-19T09:02:15.370362" elapsed="0.059296"/>
+</kw>
+<arg>${FUEL}</arg>
+<arg>Diesel</arg>
+<status status="PASS" start="2024-01-19T09:02:15.369339" elapsed="0.061392"/>
+</kw>
+<kw name="Escrever em Campo de Texto" owner="pages-common">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:15.434806" level="INFO">Typing text '100' into text field 'id=payload'.</msg>
+<arg>${locator}</arg>
+<arg>${text_to_type}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T09:02:15.434309" elapsed="0.085604"/>
+</kw>
+<arg>${PAYLOAD}</arg>
+<arg>100</arg>
+<status status="PASS" start="2024-01-19T09:02:15.433626" elapsed="0.086287"/>
+</kw>
+<kw name="Escrever em Campo de Texto" owner="pages-common">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:15.520927" level="INFO">Typing text '200' into text field 'id=totalweight'.</msg>
+<arg>${locator}</arg>
+<arg>${text_to_type}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T09:02:15.520927" elapsed="0.100497"/>
+</kw>
+<arg>${TOTAL_WEIGHT}</arg>
+<arg>200</arg>
+<status status="PASS" start="2024-01-19T09:02:15.519913" elapsed="0.101511"/>
+</kw>
+<kw name="Escrever em Campo de Texto" owner="pages-common">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:15.622850" level="INFO">Typing text '6000' into text field 'id=listprice'.</msg>
+<arg>${locator}</arg>
+<arg>${text_to_type}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T09:02:15.621424" elapsed="0.091428"/>
+</kw>
+<arg>${LIST_PRICE}</arg>
+<arg>6000</arg>
+<status status="PASS" start="2024-01-19T09:02:15.621424" elapsed="0.091428"/>
+</kw>
+<kw name="Escrever em Campo de Texto" owner="pages-common">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:15.717890" level="INFO">Typing text '15' into text field 'id=licenseplatenumber'.</msg>
+<arg>${locator}</arg>
+<arg>${text_to_type}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T09:02:15.714654" elapsed="0.082662"/>
+</kw>
+<arg>${LICENSE_PLATE_NUMBER}</arg>
+<arg>15</arg>
+<status status="PASS" start="2024-01-19T09:02:15.712852" elapsed="0.085199"/>
+</kw>
+<kw name="Escrever em Campo de Texto" owner="pages-common">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:15.802283" level="INFO">Typing text '280' into text field 'id=annualmileage'.</msg>
+<arg>${locator}</arg>
+<arg>${text_to_type}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T09:02:15.801782" elapsed="0.084417"/>
+</kw>
+<arg>${ANNUAL_MILEAGE}</arg>
+<arg>280</arg>
+<status status="PASS" start="2024-01-19T09:02:15.799254" elapsed="0.086945"/>
+</kw>
+<kw name="Clicar Element Next" owner="pages-common">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:15.887337" level="INFO">Clicking element 'id=nextenterinsurantdata'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T09:02:15.887337" elapsed="0.071183"/>
+</kw>
+<arg>${NEXT_ENTER_INSURANT_DATA}</arg>
+<status status="PASS" start="2024-01-19T09:02:15.887337" elapsed="0.072184"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-19T09:02:20.960078" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-19T09:02:15.959521" elapsed="5.000557"/>
+</kw>
+<status status="PASS" start="2024-01-19T09:02:10.135611" elapsed="10.824467"/>
+</kw>
+<kw name="When Enter Insurance Data" owner="insurance-data-page">
+<kw name="Escrever em Campo de Texto" owner="pages-common">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:20.965160" level="INFO">Typing text 'Gustavo' into text field 'id=firstname'.</msg>
+<arg>${locator}</arg>
+<arg>${text_to_type}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T09:02:20.965160" elapsed="0.094446"/>
+</kw>
+<arg>${FIRSTNAME}</arg>
+<arg>Gustavo</arg>
+<status status="PASS" start="2024-01-19T09:02:20.964183" elapsed="0.095423"/>
+</kw>
+<kw name="Escrever em Campo de Texto" owner="pages-common">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:21.060621" level="INFO">Typing text 'Castilho' into text field 'id=lastname'.</msg>
+<arg>${locator}</arg>
+<arg>${text_to_type}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T09:02:21.060621" elapsed="0.100329"/>
+</kw>
+<arg>${LASTNAME}</arg>
+<arg>Castilho</arg>
+<status status="PASS" start="2024-01-19T09:02:21.059606" elapsed="0.102345"/>
+</kw>
+<kw name="Preencher Campo de Data" owner="pages-common">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:21.161951" level="INFO">Typing text '11/03/1997' into text field 'id=birthdate'.</msg>
+<arg>${locator}</arg>
+<arg>${date}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T09:02:21.161951" elapsed="0.111674"/>
+</kw>
+<arg>${BIRTHDATE}</arg>
+<arg>11/03/1997</arg>
+<status status="PASS" start="2024-01-19T09:02:21.161951" elapsed="0.111674"/>
+</kw>
+<kw name="Clicar em Sim" owner="pages-common">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:21.274714" level="INFO">Executing JavaScript:
+document.getElementById('gendermale').click()
+Without any arguments.</msg>
+<arg>document.getElementById('${locator}').click()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-01-19T09:02:21.273625" elapsed="0.009128"/>
+</kw>
+<arg>${GENDER_MALE}</arg>
+<status status="PASS" start="2024-01-19T09:02:21.273625" elapsed="0.009128"/>
+</kw>
+<kw name="Escrever em Campo de Texto" owner="pages-common">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:21.285703" level="INFO">Typing text 'Rua Rio Cachoeira' into text field 'id=streetaddress'.</msg>
+<arg>${locator}</arg>
+<arg>${text_to_type}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T09:02:21.285703" elapsed="0.096193"/>
+</kw>
+<arg>${STREET_ADDRESS}</arg>
+<arg>Rua Rio Cachoeira</arg>
+<status status="PASS" start="2024-01-19T09:02:21.282753" elapsed="0.099206"/>
+</kw>
+<kw name="Selecionar Opcao No Dropdown" owner="pages-common">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:21.381959" level="INFO">Selecting options from selection list 'id=country' by label Brazil.</msg>
+<arg>${locator}</arg>
+<arg>${opcao}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-01-19T09:02:21.381959" elapsed="0.083252"/>
+</kw>
+<arg>${COUNTRY}</arg>
+<arg>Brazil</arg>
+<status status="PASS" start="2024-01-19T09:02:21.381959" elapsed="0.083252"/>
+</kw>
+<kw name="Escrever em Campo de Texto" owner="pages-common">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:21.465211" level="INFO">Typing text '83322260' into text field 'id=zipcode'.</msg>
+<arg>${locator}</arg>
+<arg>${text_to_type}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T09:02:21.465211" elapsed="0.098408"/>
+</kw>
+<arg>${ZIPCODE}</arg>
+<arg>83322260</arg>
+<status status="PASS" start="2024-01-19T09:02:21.465211" elapsed="0.098408"/>
+</kw>
+<kw name="Escrever em Campo de Texto" owner="pages-common">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:21.564671" level="INFO">Typing text 'Pinhais' into text field 'id=city'.</msg>
+<arg>${locator}</arg>
+<arg>${text_to_type}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T09:02:21.564671" elapsed="0.082611"/>
+</kw>
+<arg>${CITY}</arg>
+<arg>Pinhais</arg>
+<status status="PASS" start="2024-01-19T09:02:21.563619" elapsed="0.083663"/>
+</kw>
+<kw name="Selecionar Opcao No Dropdown" owner="pages-common">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:21.648283" level="INFO">Selecting options from selection list 'id=occupation' by label Farmer.</msg>
+<arg>${locator}</arg>
+<arg>${opcao}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-01-19T09:02:21.648283" elapsed="0.065167"/>
+</kw>
+<arg>${OCCUPATION}</arg>
+<arg>Farmer</arg>
+<status status="PASS" start="2024-01-19T09:02:21.647282" elapsed="0.066168"/>
+</kw>
+<kw name="Clicar em Sim" owner="pages-common">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:21.714451" level="INFO">Executing JavaScript:
+document.getElementById('speeding').click()
+Without any arguments.</msg>
+<arg>document.getElementById('${locator}').click()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-01-19T09:02:21.714451" elapsed="0.012001"/>
+</kw>
+<arg>${SPEEDING}</arg>
+<status status="PASS" start="2024-01-19T09:02:21.713450" elapsed="0.013002"/>
+</kw>
+<kw name="Clicar em Sim" owner="pages-common">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:21.728451" level="INFO">Executing JavaScript:
+document.getElementById('cliffdiving').click()
+Without any arguments.</msg>
+<arg>document.getElementById('${locator}').click()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-01-19T09:02:21.727452" elapsed="0.012566"/>
+</kw>
+<arg>${CLIFFDIVING}</arg>
+<status status="PASS" start="2024-01-19T09:02:21.727452" elapsed="0.012566"/>
+</kw>
+<kw name="Escrever em Campo de Texto" owner="pages-common">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:21.741020" level="INFO">Typing text 'https://github.com/GustavoWiessenerC' into text field 'id=website'.</msg>
+<arg>${locator}</arg>
+<arg>${text_to_type}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T09:02:21.741020" elapsed="0.140865"/>
+</kw>
+<arg>${WEBSITE}</arg>
+<arg>https://github.com/GustavoWiessenerC</arg>
+<status status="PASS" start="2024-01-19T09:02:21.740018" elapsed="0.141867"/>
+</kw>
+<kw name="Escolher Arquivo" owner="pages-common">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:21.885762" level="INFO">Executing JavaScript:
+document.getElementById('picture').value='archives/perfil.jpeg';
+Without any arguments.</msg>
+<arg>document.getElementById('${input_locator}').value='${caminho_do_arquivo}';</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-01-19T09:02:21.883395" elapsed="0.013986"/>
+</kw>
+<arg>${PICTURE}</arg>
+<arg>archives/perfil.jpeg</arg>
+<status status="PASS" start="2024-01-19T09:02:21.881885" elapsed="0.015496"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-19T09:02:23.897458" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-19T09:02:21.897381" elapsed="2.000077"/>
+</kw>
+<kw name="Clicar Element Next" owner="pages-common">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:23.898440" level="INFO">Clicking element 'id=nextenterproductdata'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T09:02:23.898440" elapsed="0.046804"/>
+</kw>
+<arg>${NEXT_ENTER_PRODUCT_DATA}</arg>
+<status status="PASS" start="2024-01-19T09:02:23.897458" elapsed="0.048804"/>
+</kw>
+<status status="PASS" start="2024-01-19T09:02:20.963077" elapsed="2.983185"/>
+</kw>
+<kw name="And Enter Product Data" owner="product-data-page">
+<kw name="Preencher Campo de Data" owner="pages-common">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:23.955020" level="INFO">Typing text '10/04/2024' into text field 'id=startdate'.</msg>
+<arg>${locator}</arg>
+<arg>${date}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T09:02:23.955020" elapsed="0.103145"/>
+</kw>
+<arg>${START_DATE}</arg>
+<arg>10/04/2024</arg>
+<status status="PASS" start="2024-01-19T09:02:23.955020" elapsed="0.103145"/>
+</kw>
+<kw name="Selecionar Opcao No Dropdown" owner="pages-common">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:24.059164" level="INFO">Selecting options from selection list 'id=insurancesum' by label 10.000.000,00.</msg>
+<arg>${locator}</arg>
+<arg>${opcao}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-01-19T09:02:24.059164" elapsed="0.068082"/>
+</kw>
+<arg>${INSURANCE_SUM}</arg>
+<arg>10.000.000,00</arg>
+<status status="PASS" start="2024-01-19T09:02:24.058165" elapsed="0.069081"/>
+</kw>
+<kw name="Selecionar Opcao No Dropdown" owner="pages-common">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:24.128246" level="INFO">Selecting options from selection list 'id=meritrating' by label Malus 12.</msg>
+<arg>${locator}</arg>
+<arg>${opcao}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-01-19T09:02:24.128246" elapsed="0.061541"/>
+</kw>
+<arg>${MERIT_RATING}</arg>
+<arg>Malus 12</arg>
+<status status="PASS" start="2024-01-19T09:02:24.127246" elapsed="0.062541"/>
+</kw>
+<kw name="Selecionar Opcao No Dropdown" owner="pages-common">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:24.190804" level="INFO">Selecting options from selection list 'id=damageinsurance' by label Partial Coverage.</msg>
+<arg>${locator}</arg>
+<arg>${opcao}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-01-19T09:02:24.190804" elapsed="0.066585"/>
+</kw>
+<arg>${DAMAGE_INSURANCE}</arg>
+<arg>Partial Coverage</arg>
+<status status="PASS" start="2024-01-19T09:02:24.189787" elapsed="0.067602"/>
+</kw>
+<kw name="Clicar em Sim" owner="pages-common">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:24.258490" level="INFO">Executing JavaScript:
+document.getElementById('EuroProtection').click()
+Without any arguments.</msg>
+<arg>document.getElementById('${locator}').click()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-01-19T09:02:24.258490" elapsed="0.008148"/>
+</kw>
+<arg>${EURO_PROTECTION}</arg>
+<status status="PASS" start="2024-01-19T09:02:24.257389" elapsed="0.010093"/>
+</kw>
+<kw name="Selecionar Opcao No Dropdown" owner="pages-common">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:24.270244" level="INFO">Selecting options from selection list 'id=courtesycar' by label Yes.</msg>
+<arg>${locator}</arg>
+<arg>${opcao}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-01-19T09:02:24.269979" elapsed="0.075206"/>
+</kw>
+<arg>${COURTESY_CAR}</arg>
+<arg>Yes</arg>
+<status status="PASS" start="2024-01-19T09:02:24.268777" elapsed="0.076408"/>
+</kw>
+<status status="PASS" start="2024-01-19T09:02:23.949261" elapsed="0.395924"/>
+</kw>
+<kw name="And Select Price Option" owner="price-option-page">
+<kw name="Clicar Element Next" owner="pages-common">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:24.352992" level="INFO">Clicking element 'id=nextselectpriceoption'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T09:02:24.351493" elapsed="0.064663"/>
+</kw>
+<arg>${NEXT_SELECT_PRICE_OPTION}</arg>
+<status status="PASS" start="2024-01-19T09:02:24.350183" elapsed="0.066993"/>
+</kw>
+<kw name="Clicar em Sim" owner="pages-common">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:24.422163" level="INFO">Executing JavaScript:
+document.getElementById('selectgold').click()
+Without any arguments.</msg>
+<arg>document.getElementById('${locator}').click()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-01-19T09:02:24.421119" elapsed="0.018382"/>
+</kw>
+<arg>${SELECT_GOLD}</arg>
+<status status="PASS" start="2024-01-19T09:02:24.417176" elapsed="0.022325"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-19T09:02:26.441023" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-19T09:02:24.439501" elapsed="2.001522"/>
+</kw>
+<kw name="Clicar Element Next" owner="pages-common">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:26.442024" level="INFO">Clicking element 'id=nextsendquote'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T09:02:26.442024" elapsed="0.068226"/>
+</kw>
+<arg>${NEXT_SEND_QUOTE}</arg>
+<status status="PASS" start="2024-01-19T09:02:26.442024" elapsed="0.068226"/>
+</kw>
+<status status="PASS" start="2024-01-19T09:02:24.348184" elapsed="2.162066"/>
+</kw>
+<kw name="Then Send Quote" owner="send-quote-page">
+<kw name="Escrever em Campo de Texto" owner="pages-common">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:26.523490" level="INFO">Typing text 'teste@teste.com' into text field 'id=email'.</msg>
+<arg>${locator}</arg>
+<arg>${text_to_type}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T09:02:26.522988" elapsed="0.169703"/>
+</kw>
+<arg>${EMAIL}</arg>
+<arg>teste@teste.com</arg>
+<status status="PASS" start="2024-01-19T09:02:26.521255" elapsed="0.171939"/>
+</kw>
+<kw name="Escrever em Campo de Texto" owner="pages-common">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:26.694220" level="INFO">Typing text '999999999' into text field 'id=phone'.</msg>
+<arg>${locator}</arg>
+<arg>${text_to_type}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T09:02:26.694220" elapsed="0.172852"/>
+</kw>
+<arg>${PHONE}</arg>
+<arg>999999999</arg>
+<status status="PASS" start="2024-01-19T09:02:26.693194" elapsed="0.173878"/>
+</kw>
+<kw name="Escrever em Campo de Texto" owner="pages-common">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:26.871589" level="INFO">Typing text 'Gustavo' into text field 'id=username'.</msg>
+<arg>${locator}</arg>
+<arg>${text_to_type}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T09:02:26.869245" elapsed="0.094066"/>
+</kw>
+<arg>${USERNAME}</arg>
+<arg>Gustavo</arg>
+<status status="PASS" start="2024-01-19T09:02:26.867072" elapsed="0.096239"/>
+</kw>
+<kw name="Escrever em Campo de Texto" owner="pages-common">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:26.964312" level="INFO">Typing text 'Gus2023' into text field 'id=password'.</msg>
+<arg>${locator}</arg>
+<arg>${text_to_type}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T09:02:26.963311" elapsed="0.087431"/>
+</kw>
+<arg>${PASSWORD}</arg>
+<arg>Gus2023</arg>
+<status status="PASS" start="2024-01-19T09:02:26.963311" elapsed="0.089077"/>
+</kw>
+<kw name="Escrever em Campo de Texto" owner="pages-common">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:27.056626" level="INFO">Typing text 'Gus2023' into text field 'id=confirmpassword'.</msg>
+<arg>${locator}</arg>
+<arg>${text_to_type}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T09:02:27.055439" elapsed="0.095144"/>
+</kw>
+<arg>${CONFIRM_PASSWORD}</arg>
+<arg>Gus2023</arg>
+<status status="PASS" start="2024-01-19T09:02:27.053916" elapsed="0.096667"/>
+</kw>
+<kw name="Escrever em Campo de Texto" owner="pages-common">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:27.154198" level="INFO">Typing text 'Comment in my user test' into text field 'id=Comments'.</msg>
+<arg>${locator}</arg>
+<arg>${text_to_type}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T09:02:27.153923" elapsed="0.102652"/>
+</kw>
+<arg>${COMMENTS}</arg>
+<arg>Comment in my user test</arg>
+<status status="PASS" start="2024-01-19T09:02:27.151583" elapsed="0.105518"/>
+</kw>
+<kw name="Clicar Element Next" owner="pages-common">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:27.258217" level="INFO">Clicking element 'id=sendemail'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T09:02:27.258217" elapsed="0.055787"/>
+</kw>
+<arg>${SEND_EMAIL}</arg>
+<status status="PASS" start="2024-01-19T09:02:27.257207" elapsed="0.056797"/>
+</kw>
+<kw name="Aguardar Mensagem de Sucesso" owner="pages-common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//h2[text()='Sending e-mail success!']</arg>
+<arg>timeout=20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-01-19T09:02:27.315084" elapsed="8.507960"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T09:02:35.845591" level="INFO">${success_message} = Sending e-mail success!</msg>
+<var>${success_message}</var>
+<arg>xpath=//h2[text()='Sending e-mail success!']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T09:02:35.824117" elapsed="0.022559"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${success_message}</arg>
+<arg>Sending e-mail success!</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-01-19T09:02:35.846676" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-01-19T09:02:27.314004" elapsed="8.532672"/>
+</kw>
+<status status="PASS" start="2024-01-19T09:02:26.513475" elapsed="9.334190"/>
+</kw>
+<status status="PASS" start="2024-01-19T09:02:10.134169" elapsed="25.715420"/>
+</test>
+<status status="PASS" start="2024-01-19T09:02:09.878641" elapsed="25.972953"/>
+</suite>
+<status status="PASS" start="2024-01-19T09:02:09.874742" elapsed="25.977849"/>
+</suite>
+<status status="PASS" start="2024-01-19T09:02:09.803725" elapsed="26.050866"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tecnica-Test">Tecnica-Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Features">Tecnica-Test.Features</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Vehicle-Insurance-E2E">Tecnica-Test.Features.Vehicle-Insurance-E2E</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
